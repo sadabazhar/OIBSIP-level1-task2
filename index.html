@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadab Azhar</title>
+    <link rel="icon" href="/images/icon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e4e3c5dbb4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 style="color: #1B9C85; font-size: 25px;">SA</h1>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#protfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i onclick="openmenu()" class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text" id="home">
+                <p>Front-end Developer</p>
+                <h1>Hii, I'm <span style="color: #1B9C85;">Sadab Azhar</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------About section-------- -->
+
+    <div id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p class="about-me">I'm a frontend developer with a passion for learning and expanding my skills. I
+                        want to become a full-stack developer and are dedicated to achieving this by learning new
+                        technologies and frameworks.<br> I'm proficient in HTML, CSS, and
+                        JavaScript and have experience with popular front-end frameworks like React and Angular. I'm
+                        currently learning back-end technologies like Node.js, Python, and PHP to gain a better
+                        understanding of how they work with front-end development
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link-1" onclick="opendoc1('skills')">Skills</p>
+                        <p class="tab-links active-link-2" onclick="opendoc2('experience')">Experience</p>
+                        <p class="tab-links active-link-3" onclick="opendoc3('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Front-end</li>
+                            <li><span>DSA</span><br>Problem Solving</li>
+                            <li><span>DBMS</span><br>SQL & MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Oasis Infobyte Internship</span><br>May 2023 - Present</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2024</span><br>Computer Science Engineering at Al-kabir Polytechnic</li>
+                            <li><span>2019</span><br>Matric from +2 high school Barhi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------services-------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-tittle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code fa-beat"></i>
+                    <h2>Developing web pages</h2>
+                    <p>We provide web development services that help businesses create and maintain their websites. Me
+                        and my frineds work together to build websites that are user-friendly, visually
+                        appealing, and responsive across different devices. We use programming languages such as HTML,
+                        CSS, and JavaScript and their popular front-end frameworks like Bootstrap, Tailwind CSS, React
+                        and Angular to create the frontend of the website.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-lightbulb fa-bounce"></i>
+                    <h2>Updating and maintaining web pages</h2>
+                    <p>Our team specializes in providing beginner-level frontend web page management services to ensure
+                        that your website is up-to-date and functioning correctly. We can help you with content and
+                        media updates, layout and design modifications, and overall website optimization.
+                        Contact us today to learn more about our frontend web page management services.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------Portfolio-------- -->
+
+    <div id="protfolio">
+        <div class="container">
+            <div class="sub-tittle">My Work</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Gym Website</h3>
+                        <p>Work in progress!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Facebook Clone</h3>
+                        <p>Work in progress!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Shopping App</h3>
+                        <p>Work in progress!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- --------Contact-------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contact Me!</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sadabazhar84@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7004865443</p>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/sadab-azhar/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Sadab-azhar"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/sadabazhar"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="images/sadab_azhar_resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="contactForm" data-netlify="true">
+                        <input type="text" class="contact-name" name="Name" placeholder="Your name" required>
+                        <input type="email" class="contact-email" name="Email" placeholder="Your email" required>
+                        <input type="text" class="contact-subject" name="Subject" placeholder="Subject" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; sadabazhar.netlify.app <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+</body>
+<script src="logic.js">
+</script>
+
+</html>
