@@ -109,103 +109,195 @@ nav ul li a:hover::after {
   margin-bottom: 15px;
 }
 
-.tab-titles {
+.sub-tittle.skills {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.skills-icon span {
+  font-size: 30px;
+  margin-right: 17px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.skills-icon span:hover {
+  transform: translateY(-5px);
+  transition: transform 0.5s;
+}
+
+.skills-icon .fa-html5 {
+  color: #e34c26;
+  margin-right: 10px;
+}
+
+.skills-icon .fa-css3-alt {
+  color: #264de4;
+  margin-right: 10px;
+}
+
+.skills-icon .fa-js {
+  color: #f0db4f;
+  margin-right: 10px;
+}
+
+.skills-icon .fa-react {
+  color: #61dbfb;
+  margin-right: 10px;
+}
+
+/* -- --------Skils Section-------- -- */
+
+.skills_section {
+  width: 100%;
+  height: 100vh;
+  padding: 0px 13%;
   display: flex;
-  margin: 20px 0 40px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
-.tab-links {
-  margin-right: 50px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  cursor: pointer;
-  position: relative;
+.skills_head {
+  width: 100%;
+  margin-bottom: 100px;
+  display: grid;
+  place-items: center;
+  text-align: center;
 }
-
-.tab-links::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 3px;
-  background-color: #1b9c85;
-  left: 0;
-  bottom: -8px;
-  transition: 0.5s;
+.skills_head h2 {
+  font-size: 30px;
+  margin-bottom: -5px;
 }
-
-.tab-links.active-link-1:hover:after {
-  width: 60%;
-}
-
-.tab-links.active-link-2:hover:after {
-  width: 20%;
-}
-
-.tab-links.active-link-3:hover:after {
-  width: 50%;
-}
-
-.tab-contents ul li {
-  list-style: none;
-  margin: 5px, 0px, 5px, 15px;
-  font-size: 15px;
-}
-
-.tab-contents ul li span {
+.skills_head h2 span {
   color: #1b9c85;
 }
-
-.tab-contents {
-  display: none;
-}
-
-.tab-contents.active-tab {
-  display: none;
-}
-
-/* -- --------Services-------- -- */
-#services {
-  padding: 30px 0;
-}
-
-.services-list {
+.skills_main {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 50px;
 }
-
-.services-list div {
-  background-color: #262626;
-  padding: 40px;
-  font-size: 13px;
-  font-weight: 300;
-  border-radius: 10px;
-  transition: background 0.5s, transform 0.5s;
+.skills_main .skill_bar .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
 }
-
-.services-list div i {
-  font-size: 50px;
-  margin-bottom: 30px;
+.skill_bar .info p:nth-child(2) {
+  font-weight: 500;
 }
-
-.services-list div h2 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 15px;
+.skill_bar .bar {
+  width: 100%;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.144);
+  border-radius: 25px;
+  margin-top: 5px;
+  position: relative;
 }
-
-.services-list div a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 13px;
-  margin-top: 20px;
-  display: inline-block;
+.skill_bar .bar span {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #1b9c85;
+  border-radius: 25px;
 }
-
-.services-list div:hover {
-  background: #1b9c85;
-  transform: translateY(-10px);
+.skill_bar .bar .html {
+  width: 90%;
+  animation: html 2s;
+}
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+.skill_bar .bar .css {
+  width: 85%;
+  animation: css 2s;
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+.skill_bar .bar .sass {
+  width: 80%;
+  animation: sass 2s;
+}
+@keyframes sass {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skill_bar .bar .js {
+  width: 80%;
+  animation: css 2s;
+}
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skill_bar .bar .react {
+  width: 75%;
+  animation: react 2s;
+}
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.skill_bar .bar .node {
+  width: 70%;
+  animation: node 2s;
+}
+@keyframes node {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+.skill_bar .bar .express {
+  width: 65%;
+  animation: express 2s;
+}
+@keyframes express {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+.skill_bar .bar .mongo {
+  width: 60%;
+  animation: mongo 2s;
+}
+@keyframes mongo {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
 }
 
 /* My Work Section */

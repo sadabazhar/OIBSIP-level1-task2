@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sadab Azhar</title>
+    <title>Sadab Azhar - Developer Portfolio</title>
     <link rel="icon" href="/images/icon.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,13 +19,13 @@
     <div id="header">
         <div class="container">
             <nav>
-                <h1 style="color: #1B9C85; font-size: 25px;">SA</h1>
+                <h1 style="color: #1B9C85; font-size: 25px;">Azhar's Portfolio</h1>
                 <ul id="side-menu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#protfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                     <i class="fa-solid fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i onclick="openmenu()" class="fa-solid fa-bars"></i>
@@ -54,62 +54,103 @@
                         currently learning back-end technologies like Node.js, Python, and PHP to gain a better
                         understanding of how they work with front-end development
                     </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link-1" onclick="opendoc1('skills')">Skills</p>
-                        <p class="tab-links active-link-2" onclick="opendoc2('experience')">Experience</p>
-                        <p class="tab-links active-link-3" onclick="opendoc3('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Web Development</span><br>Front-end</li>
-                            <li><span>DSA</span><br>Problem Solving</li>
-                            <li><span>DBMS</span><br>SQL & MySQL</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Oasis Infobyte Internship</span><br>May 2023 - Present</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2021-2024</span><br>Computer Science Engineering at Al-kabir Polytechnic</li>
-                            <li><span>2019</span><br>Matric from +2 high school Barhi</li>
-                        </ul>
+                    <h1 class="sub-tittle skills">My Expertise</h1>
+                    <div class="skills-icon">
+                        <span><i class="fa-brands fa-html5 fa-bounce"></i>HTML</span>
+                        <span><i class="fa-brands fa-css3-alt fa-bounce"></i>CSS</span>
+                        <span><i class="fa-brands fa-js fa-bounce"></i>Java Script</span>
+                        <span><i class="fa-brands fa-react fa-bounce"></i>React.js</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 
-    <!-- --------services-------- -->
+    <!-- --------skills-------- -->
 
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-tittle">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code fa-beat"></i>
-                    <h2>Developing web pages</h2>
-                    <p>We provide web development services that help businesses create and maintain their websites. Me
-                        and my frineds work together to build websites that are user-friendly, visually
-                        appealing, and responsive across different devices. We use programming languages such as HTML,
-                        CSS, and JavaScript and their popular front-end frameworks like Bootstrap, Tailwind CSS, React
-                        and Angular to create the frontend of the website.</p>
-                    <a href="#">Learn More</a>
+    <div id="skills" class="skills_section">
+        <div class="skills_head">
+            <h2>My <span>Skills</span></h2>
+            <p>Here is my skills to represent my Expertise</p>
+        </div>
+
+        <div class="skills_main">
+            <div class="skill_bar">
+                <div class="info">
+                    <p>HTML</p>
+                    <P>90%</P>
                 </div>
-                <div>
-                    <i class="fa-solid fa-lightbulb fa-bounce"></i>
-                    <h2>Updating and maintaining web pages</h2>
-                    <p>Our team specializes in providing beginner-level frontend web page management services to ensure
-                        that your website is up-to-date and functioning correctly. We can help you with content and
-                        media updates, layout and design modifications, and overall website optimization.
-                        Contact us today to learn more about our frontend web page management services.</p>
-                    <a href="#">Learn More</a>
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>CSS</p>
+                    <P>85%</P>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>SASS</p>
+                    <P>80%</P>
+                </div>
+                <div class="bar">
+                    <span class="sass"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Java Script</p>
+                    <P>80%</P>
+                </div>
+                <div class="bar">
+                    <span class="js"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>React js</p>
+                    <P>75%</P>
+                </div>
+                <div class="bar">
+                    <span class="react"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Node js</p>
+                    <P>70%</P>
+                </div>
+                <div class="bar">
+                    <span class="node"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Express js</p>
+                    <P>65%</P>
+                </div>
+                <div class="bar">
+                    <span class="express"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Mongo DB</p>
+                    <P>60%</P>
+                </div>
+                <div class="bar">
+                    <span class="mongo"></span>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- --------Portfolio-------- -->
 
