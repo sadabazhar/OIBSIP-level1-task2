@@ -554,11 +554,6 @@ nav .fa-solid {
     cursor: pointer;
   }
 
-  .tab-contents ul li {
-    margin: 5px, 0px, 5px, 15px;
-    font-size: 10px;
-  }
-
   .sub-tittle {
     font-size: 40px;
   }
@@ -571,11 +566,6 @@ nav .fa-solid {
   .about-col-2 {
     font-size: 40px;
     flex-basis: 100%;
-  }
-
-  .tab-links {
-    font-size: 16px;
-    margin-right: 20px;
   }
 
   .contact-name,
